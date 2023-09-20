@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wmua
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0023-tenant/ci10t-776-0023-app/devfile-sample-wmua@sha256:3b3e0587ff2e9bd33c9319f00b46cdfff82991eed6944317863d3f31ba9e86ef
+        name: my-nodejs
+        resources: {}
+status: {}
